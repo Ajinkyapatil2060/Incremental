@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.edutech.progressive.dao.AccountDAO;
 import com.edutech.progressive.dao.AccountDAOImpl;
+import com.edutech.progressive.entity.Accounts;
 
 public class AccountServiceImpl  {
 private AccountDAO accountDAO;
