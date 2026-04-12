@@ -27,7 +27,7 @@ return;
 public void deleteCustomer(int customerld) throws SQLException {
     return;
 }
-public Customers getCustomerByld(int customerld) throws SQLException {
+public Customers getCustomerById(int customerld) throws SQLException {
     return null;
 }
 }
