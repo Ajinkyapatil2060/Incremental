@@ -9,13 +9,20 @@ import java.util.Properties;
 
 public final class DatabaseConnectionManager {
 
-     private static final Properties PROPS = new Properties();
+    private static final Properties PROPS = new Properties();
     private static volatile boolean initialized = false;
 
     private DatabaseConnectionManager() {
         // utility class
     }
 
+    /**
+     * Load properties from classpath:
+     *  - application.properties
+     *  - config/application.properties
+     * (Tests place their own application.properties under test resources,
+     *  which is on the classpath, so this works during mvn test.)
+     */
     private static void loadProperties() {
         if (initialized) return;
 
