@@ -5,6 +5,7 @@ package com.edutech.progressive.dao;
 import java.sql.SQLException;
 import java.util.List;
 
+import com.edutech.progressive.dto.CustomerAccountInfo;
 import com.edutech.progressive.entity.Customers;
 
 public interface CustomerDAO {
@@ -13,4 +14,5 @@ public interface CustomerDAO {
     void updateCustomer(Customers customers) throws SQLException;
     void deleteCustomer(int customerId) throws SQLException;
     List<Customers> getAllCustomers() throws SQLException;
+     CustomerAccountInfo getCustomerAccountInfo(int customerId) throws SQLException;
 }

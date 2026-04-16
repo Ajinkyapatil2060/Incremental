@@ -11,13 +11,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-
+@Repository
 public interface AccountRepository extends JpaRepository<Accounts, Integer> {
+
+    List<Accounts> getAccountsByCustomerCustomerId(int customerId);
     Accounts findByAccountId(int accountId);
-
-    List<Accounts> findByCustomerId(int customerId);
-    List<Accounts> findByCustomerCustomerId(int customerId);
-
 
     @Modifying
     @Transactional
