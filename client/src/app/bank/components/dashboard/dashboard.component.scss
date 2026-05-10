@@ -1,87 +1,98 @@
+/* Dashboard Wrapper */
 .dashboard-container {
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 24px; /* slightly more padding */
+  background-color: #f4f6f8; /* softer gray background */
 }
 
+/* Card styling */
 .card {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #ccc; /* lighter border */
+  padding: 22px;
+  margin-bottom: 24px;
+  border-radius: 10px; /* slightly more rounded */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); /* adjusted shadow */
 }
 
-
+/* Table styling */
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .table th,
 .table td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 1px solid #ccc;
+  padding: 10px; /* more breathing room */
   text-align: left;
 }
 
 .table th {
-  background-color: #007bff;
-  color: white;
+  background-color: #0069d9; /* deeper blue */
+  color: #fff;
 }
 
 .table td {
-  background-color: #f9f9f9;
+  background-color: #fafafa; /* lighter cell background */
 }
 
+/* Headings */
 h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  color: #333;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 22px; /* slightly smaller */
+  color: #222; /* darker text */
 }
 
+/* Empty list message */
 .empty-list {
-  padding: 10px;
+  padding: 12px;
   text-align: center;
+  font-style: italic; /* subtle difference */
 }
 
+/* Action buttons in table cells */
 td.actions {
   display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
+  justify-content: center; /* centered instead of space-evenly */
+  gap: 12px;
 }
 
+/* General button styling */
 .btn {
   flex-grow: 1;
-  padding: 8px 16px;
+  padding: 10px 20px;
   text-align: center;
-  font-size: 16px;
-  color: white;
+  font-size: 15px; /* slightly smaller */
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px; /* more rounded pill shape */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Edit button */
 .btn-edit {
-  background-color: #4caf50;
-  color: white;
+  background-color: #a5d6a7; /* lighter green */
+  color: #fff;
 }
 
 .btn-edit:hover {
-  background-color: #45a049;
+  background-color: #81c784; /* darker on hover */
+  transform: scale(1.07);
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2); /* subtle glow */
 }
 
 /* Delete button */
 .btn-delete {
-  background-color: #e74c3c;
-  color: white;
+  background-color: #e57373; /* softer red */
+  color: #fff;
 }
 
 .btn-delete:hover {
-  background-color: #c0392b;
+  background-color: #d32f2f; /* deeper red */
+  transform: scale(1.07);
+  box-shadow: 0 4px 10px rgba(200, 0, 0, 0.25); /* subtle glow */
 }
